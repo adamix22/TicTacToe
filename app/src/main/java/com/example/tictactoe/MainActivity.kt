@@ -117,31 +117,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Player 1 (X) wins the game!",Toast.LENGTH_SHORT).show()
                 dialog()
 
-                button1.isClickable = false
-                button2.isClickable = false
-                button3.isClickable = false
-                button4.isClickable = false
-                button5.isClickable = false
-                button6.isClickable = false
-                button7.isClickable = false
-                button8.isClickable = false
-                button9.isClickable = false
-
             }
             if (winner==2){
                 Toast.makeText(this,"Player 2 (O) wins the game!",Toast.LENGTH_SHORT).show()
                 dialog()
-                button1.isClickable = false
-                button2.isClickable = false
-                button3.isClickable = false
-                button4.isClickable = false
-                button5.isClickable = false
-                button6.isClickable = false
-                button7.isClickable = false
-                button8.isClickable = false
-                button9.isClickable = false
-
-
             }
         }
     }
