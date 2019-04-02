@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-   private fun  ButtonClick(view:View){
+    fun  ButtonClick(view:View){
      val buttonSelected = view as Button
         var cellId =0
         when(buttonSelected.id){
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     var player1 = ArrayList<Int>()
     var player2 = ArrayList<Int>()
     var activePlayer = 1
-    private fun playGame(cellId : Int,buttonSelected : Button){
+     fun playGame(cellId : Int,buttonSelected : Button){
 
 
         if (activePlayer==1){
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-   private  fun checkWinner(){
+     fun checkWinner(){
         var winner= -1
         // first row
         if (player1.contains(1) && player1.contains(2) && player1.contains(3)){
@@ -145,7 +145,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    private fun dialog(){
+    fun dialog(){
         val alertDialog =AlertDialog.Builder(this@MainActivity)
         alertDialog.setTitle("GAME FINISHED")
         alertDialog.setMessage("Replay Game?")
